@@ -3,7 +3,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background-color: #f0f0f0;
     color: #333;
 }
 
@@ -25,6 +25,7 @@ header h1 {
 nav ul {
     list-style-type: none;
     padding: 0;
+    margin: 10px 0;
 }
 
 nav ul li {
@@ -33,7 +34,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #ecf0f1;
+    color: #22a2c2;
     text-decoration: none;
     font-weight: bold;
 }
@@ -57,63 +58,81 @@ nav ul li a:hover {
 /* Основний контент */
 main {
     padding: 30px;
+    background-color: #f0f8ff;
 }
 
-.intro {
-    text-align: center;
-}
-
-.intro h2 {
+h2 {
     font-size: 2rem;
+    color: #2980b9;
     margin-bottom: 20px;
-    color: #27ae60;
 }
 
-.intro p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    color: #7f8c8d;
-    margin-bottom: 30px;
-}
-
-/* Стиль для зображення логотипа */
-.linux-logo {
-    display: block;
-    margin: 0 auto 40px;
-    max-width: 200px;
-    height: auto;
-}
-
-/* Стилі для блоку з перевагами */
-.features {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-top: 20px;
-}
-
-.feature-card {
-    background-color: #ecf0f1;
+/* Стилі для кожної секції Git */
+section {
+    background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 30%;
     padding: 20px;
-    margin: 10px;
-    transition: transform 0.3s;
-    text-align: center;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-out;
 }
 
-.feature-card:hover {
-    transform: scale(1.05);
+.git-info p, .git-features ul, .git-commands ol, .git-certificate p, .git-sources ul {
+    color: #555;
+    line-height: 1.6;
 }
 
-.feature-card h3 {
-    color: #2980b9;
+ul {
+    padding-left: 20px;
+}
+
+ul li {
     margin-bottom: 10px;
+    list-style-type: disc;
 }
 
-.feature-card p {
-    color: #7f8c8d;
+ol {
+    padding-left: 20px;
+}
+
+ol li {
+    margin-bottom: 10px;
+    list-style-type: decimal;
+}
+
+code {
+    background-color: #ecf0f1;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+/* Стилі для посилань у списку джерел */
+.git-sources ul li a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+.git-sources ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Стилі для блоку сертифікату */
+.git-certificate p {
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Анімація для секцій */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Підвал */
@@ -123,4 +142,16 @@ footer {
     text-align: center;
     padding: 10px 0;
     margin-top: 40px;
+}
+.linux-logo {
+    display: block;
+    margin: 0 auto 40px;
+    max-width: 200px;
+    height: auto;
+}
+.linux-logo1 {
+    display: block;
+    margin: 0 auto 100px;
+    max-width: 1000px;
+    height: auto;
 }
