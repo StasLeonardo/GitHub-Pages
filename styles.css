@@ -1,0 +1,126 @@
+/* Загальні стилі */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Стилі для шапки */
+header {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    animation: slideDown 1s ease-out;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Анімація для заголовка */
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Основний контент */
+main {
+    padding: 30px;
+}
+
+.intro {
+    text-align: center;
+}
+
+.intro h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #27ae60;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #7f8c8d;
+    margin-bottom: 30px;
+}
+
+/* Стиль для зображення логотипа */
+.linux-logo {
+    display: block;
+    margin: 0 auto 40px;
+    max-width: 200px;
+    height: auto;
+}
+
+/* Стилі для блоку з перевагами */
+.features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.feature-card {
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    padding: 20px;
+    margin: 10px;
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.feature-card:hover {
+    transform: scale(1.05);
+}
+
+.feature-card h3 {
+    color: #2980b9;
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    color: #7f8c8d;
+}
+
+/* Підвал */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 40px;
+}
